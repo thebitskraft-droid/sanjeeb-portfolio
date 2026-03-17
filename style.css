@@ -291,9 +291,11 @@ section {
 
 /* Simplified & Highly Usable Contact Section */
 .contact-section {
-    padding: 100px 0;
+    padding: 140px 0 100px; /* Increased top padding to clear the fixed header */
     background: #f4f7f6;
     min-height: 100vh;
+    position: relative;
+    z-index: 10;
 }
 
 .contact-container-simple {
@@ -303,6 +305,8 @@ section {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     padding: 40px;
+    position: relative;
+    z-index: 20; /* High z-index to stay on top of everything */
 }
 
 .contact-header-simple {
