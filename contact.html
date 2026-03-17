@@ -59,28 +59,37 @@
 </head>
 <body>
 
+    <!-- Header & Navigation -->
     <header id="header">
         <div class="container nav">
             <a href="index.html" class="logo">SANJEEB <span>DHAKAL</span></a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
+                <li class="mobile-only"><a href="contact.html" class="cta-btn">Get in Touch</a></li>
             </ul>
-            <a href="contact.html" class="cta-btn">Get in Touch</a>
+            <div class="header-cta">
+                <a href="contact.html" class="cta-btn">Get in Touch</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
-    <section class="hero" style="padding: 12rem 0 6rem; background: var(--bg-light);">
+    <section class="hero" style="padding: 10rem 0 5rem; background: var(--bg-light);">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h1>Contact Us</h1>
                 <p>Have a project in mind? Let's discuss how we can ensure the highest quality for your infrastructure.</p>
             </div>
             
-            <div class="flex-split" style="align-items: flex-start;">
+            <div class="contact-layout">
                 <div class="image-side" data-aos="fade-right">
                     <div class="contact-info-item">
                         <div class="info-icon"><i data-lucide="mail"></i></div>
@@ -105,7 +114,7 @@
                     </div>
                     
                     <div style="margin-top: 3rem;">
-                        <h4 style="margin-bottom: 1rem;">Social Media</h4>
+                        <h4 style="margin-bottom: 1.5rem;">Social Media</h4>
                         <div style="display: flex; gap: 1rem;">
                             <a href="#" class="info-icon" title="LinkedIn"><i data-lucide="linkedin"></i></a>
                             <a href="#" class="info-icon" title="Twitter"><i data-lucide="twitter"></i></a>
@@ -113,7 +122,7 @@
                     </div>
                 </div>
                 
-                <div class="content-side" data-aos="fade-left">
+                <div class="contact-form-container" data-aos="fade-left">
                     <form class="contact-form" action="#" method="get" onsubmit="alert('Thank you for the message! Since this is a static demo, please email me directly.'); return false;">
                         <div class="form-group">
                             <label for="name">Full Name</label>
@@ -136,7 +145,7 @@
                             <label for="message">Message</label>
                             <textarea id="message" class="form-control" rows="5" placeholder="How can I help you?" required></textarea>
                         </div>
-                        <button type="submit" class="cta-btn" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
+                        <button type="submit" class="cta-btn" style="width: 100%;">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -155,6 +164,23 @@
     <script>
         AOS.init({ duration: 800, once: true });
         lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 50) header.classList.add('scrolled');

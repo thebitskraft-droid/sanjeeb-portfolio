@@ -21,14 +21,22 @@
     <header id="header">
         <div class="container nav">
             <a href="index.html" class="logo">SANJEEB <span>DHAKAL</span></a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li class="mobile-only"><a href="contact.html" class="cta-btn">Get in Touch</a></li>
             </ul>
-            <a href="contact.html" class="cta-btn">Get in Touch</a>
+            <div class="header-cta">
+                <a href="contact.html" class="cta-btn">Get in Touch</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
@@ -39,9 +47,9 @@
                 <span class="badge">Civil Engineer & Road QA Expert</span>
                 <h1>Building Quality Roads. Ensuring Safety.</h1>
                 <p>Specializing in Road Quality Assurance and Infrastructure Inspection with years of experience in high-standard construction projects.</p>
-                <div style="display: flex; gap: 1rem;">
+                <div class="hero-btns" style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <a href="projects.html" class="cta-btn">View Projects</a>
-                    <a href="services.html" class="cta-btn" style="background: transparent; color: var(--primary) !important; border: 1px solid var(--primary); box-shadow: none;">Our Services</a>
+                    <a href="contact.html" class="cta-btn" style="background: transparent; color: var(--primary) !important; border: 2px solid var(--primary); box-shadow: none;">Contact Sanjeeb</a>
                 </div>
             </div>
         </div>
@@ -150,7 +158,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Initialize AOS
@@ -161,6 +168,22 @@
 
         // Initialize Lucide Icons
         lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
 
         // Header Scroll Effect
         window.addEventListener('scroll', () => {
