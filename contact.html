@@ -34,66 +34,75 @@
 
     <section class="contact-section">
         <div class="container">
-            <div class="contact-container-simple" data-aos="fade-up">
-                <div class="contact-header-simple">
-                    <h1>Contact Sanjeeb Dhakal</h1>
-                    <p>Field-proven Road Quality Assurance Specialist. Get expert consultation for your project.</p>
-                </div>
-                
-                <div class="contact-grid-simple">
-                    <!-- Text Details -->
-                    <div class="contact-details-simple">
-                        <h3>Connect with me</h3>
-                        <div class="contact-item-simple">
-                            <i data-lucide="mail"></i>
-                            <span>contact@sanjeebdhakal.com.np</span>
-                        </div>
-                        <div class="contact-item-simple">
-                            <i data-lucide="phone"></i>
-                            <span>+977 98XXXXXXX</span>
-                        </div>
-                        <div class="contact-item-simple">
-                            <i data-lucide="map-pin"></i>
-                            <span>Kathmandu, Nepal</span>
-                        </div>
-                        
-                        <div style="margin-top: 30px;">
-                            <h4 style="margin-bottom: 15px;">Follow on Social</h4>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="#" style="color: var(--primary);"><i data-lucide="linkedin"></i></a>
-                                <a href="#" style="color: var(--primary);"><i data-lucide="twitter"></i></a>
-                            </div>
+            <div class="contact-card-premium" data-aos="fade-up">
+                <!-- Left: Info Panel -->
+                <div class="contact-info-panel">
+                    <h2>Get in Touch</h2>
+                    <p style="margin-bottom: 2.5rem; color: rgba(255,255,255,0.7);">Have a project or a question? I'm here to help you ensure infrastructure quality.</p>
+                    
+                    <div class="info-row">
+                        <i data-lucide="mail"></i>
+                        <div class="info-text">
+                            <h4>Email Me</h4>
+                            <p>contact@sanjeebdhakal.com.np</p>
                         </div>
                     </div>
 
-                    <!-- The Form -->
-                    <form class="contact-form-simple" action="#" method="get" onsubmit="alert('Message Sent Successfully!'); return false;">
-                        <div class="form-field-simple">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" class="form-input-simple" placeholder="Enter your full name" required>
+                    <div class="info-row">
+                        <i data-lucide="phone"></i>
+                        <div class="info-text">
+                            <h4>Call Me</h4>
+                            <p>+977 98XXXXXXX</p>
                         </div>
-                        
-                        <div class="form-field-simple">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-input-simple" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="info-row">
+                        <i data-lucide="map-pin"></i>
+                        <div class="info-text">
+                            <h4>Location</h4>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h4 style="margin-bottom: 1rem; color: white;">Follow Me</h4>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" style="color: white; opacity: 0.8;"><i data-lucide="linkedin"></i></a>
+                            <a href="#" style="color: white; opacity: 0.8;"><i data-lucide="twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form Panel -->
+                <div class="contact-form-panel">
+                    <h3>Send a Message</h3>
+                    <form onsubmit="alert('Thank you! Your message has been sent.'); return false;">
+                        <div class="input-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="input-control" placeholder="Enter your full name" required>
                         </div>
 
-                        <div class="form-field-simple">
-                            <label for="subject">Project Type</label>
-                            <select id="subject" class="form-input-simple">
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="input-control" placeholder="example@mail.com" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="subject">Project Interest</label>
+                            <select id="subject" class="input-control">
                                 <option>Road Quality Assurance</option>
-                                <option>Bridge Inspection</option>
+                                <option>Site Inspection</option>
                                 <option>Material Testing</option>
-                                <option>General Inquiry</option>
+                                <option>Consultancy</option>
                             </select>
                         </div>
 
-                        <div class="form-field-simple">
+                        <div class="input-group">
                             <label for="message">Message</label>
-                            <textarea id="message" class="form-input-simple" placeholder="Tell me about your project or requirement..." required></textarea>
+                            <textarea id="message" class="input-control" placeholder="Tell me about your project needs..." required></textarea>
                         </div>
 
-                        <button type="submit" class="submit-btn-simple">Send Message Now</button>
+                        <button type="submit" class="btn-send">Send Message</button>
                     </form>
                 </div>
             </div>
