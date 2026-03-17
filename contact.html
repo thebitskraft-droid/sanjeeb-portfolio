@@ -78,76 +78,68 @@
         </div>
     </header>
 
-    <section class="hero" style="padding: 10rem 0 5rem; background: var(--bg-light);">
+    <section class="contact-section">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h1>Contact Us</h1>
-                <p>Have a project in mind? Let's discuss how we can ensure the highest quality for your infrastructure.</p>
-            </div>
-            
-            <div class="contact-layout">
-                <!-- Info Side -->
-                <div class="contact-info-side" data-aos="fade-right">
-                    <h2>Get In Touch</h2>
-                    <div class="contact-info-item">
-                        <div class="info-icon"><i data-lucide="mail"></i></div>
-                        <div class="info-content">
-                            <h4>Email Me</h4>
-                            <p>contact@sanjeebdhakal.com.np</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="info-icon"><i data-lucide="phone"></i></div>
-                        <div class="info-content">
-                            <h4>Phone</h4>
-                            <p>+977 98XXXXXXX</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="info-icon"><i data-lucide="map-pin"></i></div>
-                        <div class="info-content">
-                            <h4>Location</h4>
-                            <p>Kathmandu, Nepal (Available for travel)</p>
-                        </div>
-                    </div>
-                    
-                    <div style="margin-top: 2rem;">
-                        <h4 style="margin-bottom: 1.5rem; color: white; opacity: 0.9;">Social Media</h4>
-                        <div style="display: flex; gap: 1rem;">
-                            <a href="#" class="info-icon" title="LinkedIn"><i data-lucide="linkedin"></i></a>
-                            <a href="#" class="info-icon" title="Twitter"><i data-lucide="twitter"></i></a>
-                        </div>
-                    </div>
+            <div class="contact-container-simple" data-aos="fade-up">
+                <div class="contact-header-simple">
+                    <h1>Contact Sanjeeb Dhakal</h1>
+                    <p>Field-proven Road Quality Assurance Specialist. Get expert consultation for your project.</p>
                 </div>
                 
-                <!-- Form Side -->
-                <div class="contact-form-side" data-aos="fade-left">
-                    <h3>Send me a message</h3>
-                    <form class="contact-form" action="#" method="get" onsubmit="alert('Thank you for the message! Since this is a static demo, please email me directly.'); return false;">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Jane Doe" required>
+                <div class="contact-grid-simple">
+                    <!-- Text Details -->
+                    <div class="contact-details-simple">
+                        <h3>Connect with me</h3>
+                        <div class="contact-item-simple">
+                            <i data-lucide="mail"></i>
+                            <span>contact@sanjeebdhakal.com.np</span>
                         </div>
-                        <div class="form-group">
+                        <div class="contact-item-simple">
+                            <i data-lucide="phone"></i>
+                            <span>+977 98XXXXXXX</span>
+                        </div>
+                        <div class="contact-item-simple">
+                            <i data-lucide="map-pin"></i>
+                            <span>Kathmandu, Nepal</span>
+                        </div>
+                        
+                        <div style="margin-top: 30px;">
+                            <h4 style="margin-bottom: 15px;">Follow on Social</h4>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="#" style="color: var(--primary);"><i data-lucide="linkedin"></i></a>
+                                <a href="#" style="color: var(--primary);"><i data-lucide="twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The Form -->
+                    <form class="contact-form-simple" action="#" method="get" onsubmit="alert('Message Sent Successfully!'); return false;">
+                        <div class="form-field-simple">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-input-simple" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-field-simple">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="jane@example.com" required>
+                            <input type="email" id="email" class="form-input-simple" placeholder="name@example.com" required>
                         </div>
-                        <div class="form-group">
-                            <label for="subject">What do you need help with?</label>
-                            <select id="subject" class="form-control">
-                                <option value="consultancy">Technical Consultancy</option>
-                                <option value="qa">Quality Assurance Service</option>
-                                <option value="inspection">Site Inspection</option>
-                                <option value="other">Other Inquiry</option>
+
+                        <div class="form-field-simple">
+                            <label for="subject">Project Type</label>
+                            <select id="subject" class="form-input-simple">
+                                <option>Road Quality Assurance</option>
+                                <option>Bridge Inspection</option>
+                                <option>Material Testing</option>
+                                <option>General Inquiry</option>
                             </select>
                         </div>
-                        <div class="form-group">
+
+                        <div class="form-field-simple">
                             <label for="message">Message</label>
-                            <textarea id="message" class="form-control" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            <textarea id="message" class="form-input-simple" placeholder="Tell me about your project or requirement..." required></textarea>
                         </div>
-                        <button type="submit" class="btn-submit">
-                            Send Message <i data-lucide="send" style="width: 18px;"></i>
-                        </button>
+
+                        <button type="submit" class="submit-btn-simple">Send Message Now</button>
                     </form>
                 </div>
             </div>

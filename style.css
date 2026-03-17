@@ -289,177 +289,138 @@ section {
     margin-bottom: 1.25rem;
 }
 
-/* Contact Page Specific Layout */
+/* Simplified & Highly Usable Contact Section */
 .contact-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    position: relative;
+    padding: 100px 0;
+    background: #f4f7f6;
+    min-height: 100vh;
 }
 
-.contact-layout {
+.contact-container-simple {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 40px;
+}
+
+.contact-header-simple {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header-simple h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.contact-grid-simple {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 3rem;
-    align-items: stretch;
-    background: var(--white);
-    border-radius: 30px;
-    box-shadow: 0 25px 50px -12px rgba(0, 51, 102, 0.1);
-    overflow: hidden; /* This makes it one cohesive box */
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
 }
 
-.contact-info-side {
-    background: var(--primary);
-    color: var(--white);
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contact-info-side h2 {
-    color: var(--white);
-    font-size: 2.25rem;
-    margin-bottom: 2rem;
-}
-
-.contact-info-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 2.5rem;
-}
-
-.info-icon {
-    width: 54px;
-    height: 54px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-size: 1.25rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.info-content h4 {
-    color: var(--white);
-    font-size: 1.1rem;
-    margin-bottom: 0.25rem;
-    font-weight: 600;
-}
-
-.info-content p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.95rem;
-}
-
-.contact-form-side {
-    padding: 4rem;
-    background: var(--white);
-}
-
-.contact-form-side h3 {
-    font-size: 1.75rem;
-    margin-bottom: 2.5rem;
+.contact-details-simple h3 {
+    margin-bottom: 20px;
     color: var(--primary);
 }
 
-/* User-Friendly Form Elements */
-.form-group {
-    margin-bottom: 2rem;
-    position: relative;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.75rem;
-    font-weight: 600;
-    color: var(--secondary);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.form-control {
-    width: 100%;
-    padding: 1.1rem 1.4rem;
-    border: 2px solid #edf2f7;
-    border-radius: 12px;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: var(--transition);
-    background: #fdfdfd;
-    color: var(--text-dark);
-}
-
-.form-control:hover {
-    border-color: #e2e8f0;
-}
-
-.form-control:focus {
-    outline: none;
-    border-color: var(--primary);
-    background: var(--white);
-    box-shadow: 0 10px 20px -10px rgba(0, 51, 102, 0.15);
-}
-
-textarea.form-control {
-    resize: vertical;
-    min-height: 150px;
-    line-height: 1.6;
-}
-
-.btn-submit {
-    width: 100%;
-    padding: 1.2rem;
-    background: var(--primary);
-    color: var(--white);
-    border: none;
-    border-radius: 12px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: var(--transition);
-    box-shadow: 0 4px 6px rgba(0, 51, 102, 0.2);
+.contact-item-simple {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-.btn-submit:hover {
+.contact-item-simple i {
+    color: var(--primary);
+}
+
+/* The Form - Optimized for visibility */
+.contact-form-simple {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-field-simple {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field-simple label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.form-input-simple {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-input-simple:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+}
+
+textarea.form-input-simple {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn-simple {
+    background: var(--primary);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn-simple:hover {
     background: var(--primary-light);
-    transform: translateY(-3px);
-    box-shadow: 0 20px 25px -5px rgba(0, 51, 102, 0.2);
 }
 
-/* Footer & Other Styles already exist... */
-
-/* Mobile Responsive Overrides */
-@media (max-width: 1024px) {
-    .contact-layout {
-        grid-template-columns: 1fr;
-        border-radius: 20px;
-    }
-    
-    .contact-info-side {
-        padding: 3rem;
-    }
-    
-    .contact-form-side {
-        padding: 3rem;
-    }
-}
-
+/* Mobile Fixes - The core of the issue */
 @media (max-width: 768px) {
-    .contact-info-side, .contact-form-side {
-        padding: 2.5rem 1.5rem;
+    .contact-container-simple {
+        padding: 20px;
+        margin: 0 15px;
     }
     
-    .contact-info-side h2 {
-        font-size: 1.75rem;
+    .contact-grid-simple {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-header-simple h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Ensure body can scroll */
+    body, html {
+        height: auto;
+        overflow-y: auto !important;
+    }
+    
+    header {
+        position: relative; /* Prevent header from overlapping on scroll on mobile */
+    }
+    
+    .contact-section {
+        padding: 40px 0;
     }
 }
 
