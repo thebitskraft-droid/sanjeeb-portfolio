@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sanjeeb Dhakal | Professional Consultancy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--secondary);
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+        }
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .info-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(0, 51, 102, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">SANJEEB <span>DHAKAL</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="cta-btn">Get in Touch</a>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 12rem 0 6rem; background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1>Contact Us</h1>
+                <p>Have a project in mind? Let's discuss how we can ensure the highest quality for your infrastructure.</p>
+            </div>
+            
+            <div class="flex-split" style="align-items: flex-start;">
+                <div class="image-side" data-aos="fade-right">
+                    <div class="contact-info-item">
+                        <div class="info-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <h4 style="margin-bottom: 0.25rem;">Email Me</h4>
+                            <p style="color: var(--text-muted);">contact@sanjeebdhakal.com.np</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="info-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <h4 style="margin-bottom: 0.25rem;">Phone</h4>
+                            <p style="color: var(--text-muted);">+977 98XXXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <h4 style="margin-bottom: 0.25rem;">Location</h4>
+                            <p style="color: var(--text-muted);">Kathmandu, Nepal (Available for travel)</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 3rem;">
+                        <h4 style="margin-bottom: 1rem;">Social Media</h4>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" class="info-icon" title="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" class="info-icon" title="Twitter"><i data-lucide="twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-side" data-aos="fade-left">
+                    <form class="contact-form" action="#" method="get" onsubmit="alert('Thank you for the message! Since this is a static demo, please email me directly.'); return false;">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" class="form-control">
+                                <option value="consultancy">Technical Consultancy</option>
+                                <option value="qa">Quality Assurance Service</option>
+                                <option value="inspection">Site Inspection</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="How can I help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-btn" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="copyright" style="border: none;">
+                &copy; 2024 Sanjeeb Dhakal. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        lucide.createIcons();
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+    </script>
+</body>
+</html>
