@@ -86,31 +86,33 @@
             </div>
             
             <div class="contact-layout">
-                <div class="image-side" data-aos="fade-right">
+                <!-- Info Side -->
+                <div class="contact-info-side" data-aos="fade-right">
+                    <h2>Get In Touch</h2>
                     <div class="contact-info-item">
                         <div class="info-icon"><i data-lucide="mail"></i></div>
-                        <div>
-                            <h4 style="margin-bottom: 0.25rem;">Email Me</h4>
-                            <p style="color: var(--text-muted);">contact@sanjeebdhakal.com.np</p>
+                        <div class="info-content">
+                            <h4>Email Me</h4>
+                            <p>contact@sanjeebdhakal.com.np</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
                         <div class="info-icon"><i data-lucide="phone"></i></div>
-                        <div>
-                            <h4 style="margin-bottom: 0.25rem;">Phone</h4>
-                            <p style="color: var(--text-muted);">+977 98XXXXXXX</p>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+977 98XXXXXXX</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
                         <div class="info-icon"><i data-lucide="map-pin"></i></div>
-                        <div>
-                            <h4 style="margin-bottom: 0.25rem;">Location</h4>
-                            <p style="color: var(--text-muted);">Kathmandu, Nepal (Available for travel)</p>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Kathmandu, Nepal (Available for travel)</p>
                         </div>
                     </div>
                     
-                    <div style="margin-top: 3rem;">
-                        <h4 style="margin-bottom: 1.5rem;">Social Media</h4>
+                    <div style="margin-top: 2rem;">
+                        <h4 style="margin-bottom: 1.5rem; color: white; opacity: 0.9;">Social Media</h4>
                         <div style="display: flex; gap: 1rem;">
                             <a href="#" class="info-icon" title="LinkedIn"><i data-lucide="linkedin"></i></a>
                             <a href="#" class="info-icon" title="Twitter"><i data-lucide="twitter"></i></a>
@@ -118,18 +120,20 @@
                     </div>
                 </div>
                 
-                <div class="contact-form-container" data-aos="fade-left">
+                <!-- Form Side -->
+                <div class="contact-form-side" data-aos="fade-left">
+                    <h3>Send me a message</h3>
                     <form class="contact-form" action="#" method="get" onsubmit="alert('Thank you for the message! Since this is a static demo, please email me directly.'); return false;">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                            <input type="text" id="name" class="form-control" placeholder="Jane Doe" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                            <input type="email" id="email" class="form-control" placeholder="jane@example.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subject</label>
+                            <label for="subject">What do you need help with?</label>
                             <select id="subject" class="form-control">
                                 <option value="consultancy">Technical Consultancy</option>
                                 <option value="qa">Quality Assurance Service</option>
@@ -139,9 +143,11 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" class="form-control" rows="5" placeholder="How can I help you?" required></textarea>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Tell me about your project..." required></textarea>
                         </div>
-                        <button type="submit" class="cta-btn" style="width: 100%;">Send Message</button>
+                        <button type="submit" class="btn-submit">
+                            Send Message <i data-lucide="send" style="width: 18px;"></i>
+                        </button>
                     </form>
                 </div>
             </div>
